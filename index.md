@@ -55,6 +55,10 @@ En utilisant les données enregistrées, j'ai pu tracer plusieurs graphiques pou
 
 ![Énergie Totale](Images/Energie_pile_1_NiMH_1.2V_2500mAh.png)
 
+
+Il faut noter que les piles utiliser étaient un peu vieux c'est pour ça que l'énergie récupérer ne correspond pas à celle indiqué par le constructeur.
+
+
 4. **Résistance interne de la pile**: Cette résistance peut être un paramètre pour estimer l'état de charge de la pile (SOC "state of charge").       $R_{interne}=\frac{V_{co}-V}{I}$.
 
 avec $V_{co}$: tension circuit ouvert.
