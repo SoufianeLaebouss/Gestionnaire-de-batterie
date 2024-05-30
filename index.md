@@ -5,6 +5,8 @@ layout: default
 
 # Projet
 
+![Description de l'image](images/Courbe_decharge_pile1.png)
+
 ## Gestionnaire de Batterie
 
 Le dépôt est accessible à l'adresse : [https://github.com/votre_nom_utilisateur/gestionnaire-de-batterie](https://github.com/votre_nom_utilisateur/gestionnaire-de-batterie)
