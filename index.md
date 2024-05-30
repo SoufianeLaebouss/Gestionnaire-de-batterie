@@ -67,4 +67,4 @@ avec $V_{co}$: tension circuit ouvert.
 
 ## Conclusion
 
-Le système de gestion de décharge de pile que j'ai développé avec le module INA3221 offre une solution robuste pour évaluer les performances des piles. En combinant une configuration précise du module, une gestion efficace du temps et une analyse approfondie des données, j'ai pu obtenir des informations précieuses sur la résistance interne de la pile, son comportement en fonction du temps et son efficacité énergétique. Ce projet illustre l'importance de la surveillance et de l'analyse des performances des piles pour une utilisation optimale dans diverses applications.
+Le système de gestion de décharge de pile que j'ai développé avec le module INA3221 offre une solution pour évaluer les caractéristique des piles.
