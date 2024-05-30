@@ -23,15 +23,15 @@ J'ai créé deux fonctions principales pour interagir avec le module INA3221 :
 
 Pour lire les mesures périodiquement, j'ai utilisé un timer pour déclencher une interruption toutes les 1 seconde. À chaque interruption, la fonction de lecture des mesures est appelée pour récupérer les données du module INA3221.
 
-![Timer](chemin/vers/timer.png)
-
 ## Difficultés Rencontrées
 
 Une difficulté majeure que j'ai rencontrée était la gestion du temps dans un environnement temps réel. Initialement, j'ai tenté d'implémenter la lecture des mesures dans une tâche, mais j'ai rapidement réalisé que le temps dérivait, ce qui aurait faussé mes mesures. Pour résoudre ce problème, j'ai opté pour l'utilisation d'un timer pour garantir une précision temporelle constante.
 
 ## Circuit de décharge
 
-![Circuit de décharge](Images/difficultes.png)
+Le transistor utiliser est une MOSFET de réference BUK9832-55A, qui se caractérise par sa résistance entre drain source de faible valeur (36m$\Omega$ pour $V_{GS}=4.5V$) pour que son influence sur le courant de décharge soit négligeable. La décharge peut être réglable, dans l'exemple montrer ci-dessous: j'ai fait des courant de décharge en forme de créneau de periode 2min (1min de décharge). Aussi, afin de ne pas déteriorer la pile de 1.2V tension nominale, quand la tension de décharge atteint une seuil de tension de 0.6V, il faut arrêter la décharge.
+
+![Circuit de décharge](Images/Circuit_décharge.png)
 
 ## Traitement des Données
 
