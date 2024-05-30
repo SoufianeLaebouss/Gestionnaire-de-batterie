@@ -29,13 +29,15 @@ Pour lire les mesures périodiquement, j'ai utilisé un timer pour déclencher u
 
 Une difficulté majeure que j'ai rencontrée était la gestion du temps dans un environnement temps réel. Initialement, j'ai tenté d'implémenter la lecture des mesures dans une tâche, mais j'ai rapidement réalisé que le temps dérivait, ce qui aurait faussé mes mesures. Pour résoudre ce problème, j'ai opté pour l'utilisation d'un timer pour garantir une précision temporelle constante.
 
-![Difficultés](chemin/vers/difficultes.png)
+## Circuit de décharge
+
+![Circuit de décharge](Images/difficultes.png)
 
 ## Traitement des Données
 
 Une fois les mesures récupérées, je les envoie via une liaison série vers un PC. Sur le PC, un programme reçoit les données et les enregistre dans un fichier. J'ai ensuite utilisé des outils comme Excel pour analyser ces données. J'ai délimité les données de tension et de courant, puis j'ai calculé la résistance interne de la pile en fonction du temps.
 
-![Traitement des Données](chemin/vers/traitement_donnees.png)
+![Traitement des Données](Images/Tension_pile_1_NiMH_1.2V_2500mAh.png)
 
 ## Analyse des Données
 
@@ -43,19 +45,25 @@ En utilisant les données enregistrées, j'ai pu tracer plusieurs graphiques pou
 
 1. **Tension en Fonction du Temps**: Ce graphique montre comment la tension de la pile évolue au fil du temps, ce qui peut donner des informations sur sa décharge.
 
-![Tension en Fonction du Temps](chemin/vers/tension_temps.png)
+![Tension en Fonction du Temps](Images/Tension_pile_1_NiMH_1.2V_2500mAh.png)
 
 2. **Courant en Fonction du Temps**: Ce graphique illustre le courant de décharge de la pile au fil du temps, ce qui permet de visualiser sa performance.
 
-![Courant en Fonction du Temps](chemin/vers/courant_temps.png)
+![Courant en Fonction du Temps](Images/Courant_pile_1_NiMH_1.2V_2500mAh.png)
 
 3. **Énergie Totale Fournie par la Pile**: En intégrant le produit de la tension et du courant sur la période de décharge, j'ai calculé l'énergie totale fournie par la pile.
 
-![Énergie Totale](chemin/vers/energie_totale.png)
+![Énergie Totale](Images/Energie_pile_1_NiMH_1.2V_2500mAh.png)
 
-4. **Caractéristique Tension-Courant de la Pile**: Ce graphique met en évidence la relation entre la tension et le courant de décharge de la pile, ce qui peut être utile pour évaluer ses performances dans différentes conditions.
+4. **Résistance interne de la pile**: Cette résistance peut être un paramètre pour estimer l'état de charge de la pile (SOC "state of charge").       $R_{interne}=\frac{V_{co}-V}{I}$.
 
-![Caractéristique Tension-Courant](chemin/vers/caracteristique.png)
+avec $V_{co}$: tension circuit ouvert.
+
+![Énergie Totale](Images/Résistance_interne_pile_1_NiMH_1.2V_2500mAh.png)
+
+5. **Caractéristique Tension-Courant de la Pile**: Ce graphique met en évidence la relation entre la tension et le courant de décharge de la pile, ce qui peut être utile pour évaluer ses performances dans différentes conditions.
+
+![Caractéristique Tension-Courant](Images/Tension_Courant_1_NiMH_1.2V_2500mAh.png)
 
 ## Conclusion
 
