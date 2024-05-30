@@ -17,7 +17,7 @@ J'ai créé deux fonctions principales pour interagir avec le module INA3221 :
 
 2. **Lecture des Mesures**: Après la configuration, cette fonction lit périodiquement les valeurs de tension de bus et de tension de shunt à travers une liaison I2C. Ces valeurs sont ensuite utilisées pour calculer le courant de décharge de la pile.
 
-![Module INA3221](chemin/vers/module_ina3221.png)
+![Module INA3221](Images/Module_mesure.jpg)
 
 ## Gestion du Temps avec un Timer
 
